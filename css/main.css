@@ -1,0 +1,77 @@
+.box{
+    width:320px;
+    height:350px;
+}
+.support{
+    text-align:center;
+    margin-top:-10px;
+    font-weight: 900;
+    font-size:35px;
+    color:rgb(31,182,14);
+    letter-spacing:2px;
+}
+.service{
+    text-align:center;
+    margin-top:-50px;
+    font-weight:600;
+}
+.text{
+    padding-bottom:5px;
+    margin-left:-10px;
+    margin-right:-10px;
+    font-size:15px;
+    text-align:center;
+    border-bottom: 1px solid #ddd;
+}
+.inform{
+position:relative;
+    margin-top:-10px;
+    font-size:15px;
+    padding-bottom:5px;
+    border-bottom: 1px solid #ddd;
+}
+.left-col {
+    display: inline-block;
+    margin-right:10px;
+}
+.right-col{
+    display:inline-block;
+    text-align: end;
+}
+.change .text{
+    border-bottom:none;
+    margin-top:-5px;
+}
+.smiles{
+    position:relative;
+}
+.smile-happy, .smile-surprised, .smile-sad{
+    width:65px;
+    height:65px;
+    display:inline-block;
+}
+.smile-happy{
+    margin-left:15px;
+}
+.smile-happy, .smile-surprised{
+    margin-right:25px;
+}
+button.button.is-success{
+   margin-left:80px;
+    width:120px;
+    background-color:rgb(31,182,14);
+}
+button.button.is-success:hover{
+  background-color: rgba(31,182,14,0.8);
+}
+.thisSmile{
+    outline: 3px solid red;
+    -moz-outline-radius: 100%;
+}
+button.button.is-text{
+    text-align:center;
+    margin-top:5px;
+    height:20px;
+    font-size:13px;
+    margin-left:73px;
+}
