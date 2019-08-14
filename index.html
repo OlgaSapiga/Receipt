@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Receipt</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.less">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
       <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,7 +16,7 @@
           <div class="box">
               <article class="media">
                   <div class="media-content">
-                      <div class="content" style="overflow:hidden">
+                      <div class="content tohide" style="overflow:hidden">
                           <p class="support">CАПОРТ</p>
                           <p class="service">СЕРВІС МАЙБУТНЬОГО</p>
                           <p class="text">Ваш електронний чек на надані послуги</p>
@@ -31,14 +32,46 @@
                           </div>
                       </div>
                       <div class="change" style="overflow:hidden">
-                          <p class="text">Оберіть своє враження про майстра:</p>
+                          <div class="page one" data-page="one">
+                          <p class="text change-text">Оберіть своє враження про майстра:</p>
                           <div class="smiles">
-                          <div class="smile-happy smile"><img src="images/happy.png"/></div>
-                          <div class="smile-surprised smile"><img src="images/surprised.png"/></div>
-                          <div class="smile-sad smile"><img src="images/sad.png"/></div>
+                          <div class="smile-happy smile" data-page="four"><img src="images/happy.png"/></div>
+                          <div class="smile-surprised smile" data-page="six"><img src="images/surprised.png"/></div>
+                          <div class="smile-sad smile" data-page="three"><img src="images/sad.png"/></div>
                           </div>
-                          <button class="button is-success" style="">Підтвердити</button>
-                          <button class="button is-text" style="">Ціна не співпадає?</button>
+                          <button class="button is-success ok" style="" >Підтвердити</button>
+                          <button class="button is-text not-match" style="" data-page="two">Ціна не співпадає?</button>
+                          </div>
+                          <div class="page two hide" data-page="two">
+                              <p class="text change-text">Ціна не співпадає?</p>
+                              <p class="some-text">Цей чек стосується лише виконаних робіт, вартість матеріалів не включено.
+                              Ви впевнені, що вартість робіт не співпадає?</p>
+                              <button class="button is-success mistake" style="" data-page="four">А, все добре!</button>
+                              <button class="button is-danger not-match-truth" style="" data-page="three">Не співпадає</button>
+                          </div>
+                          <div class="page three hide" data-page="three">
+                              <p class="text change-text wait">Очікуйте на дзвінок менеджера!</p>
+                          </div>
+                          <div class="page four hide" data-page="four">
+                              <p class="made">Підтверджено</p>
+                              <p class="text change-text report">Залишіть відгук про нас та отримайте 100 грн на послугу для свого друга</p>
+                              <div class="links">
+                                  <div class="facebook"><img src="images/facebook.png"/></div>
+                                  <div class="google"><img src="images/google.png"/></div>
+                              </div>
+                              <button class="button is-text bonus" style="" data-page="five">Отримати бонус</button>
+                          </div>
+                          <div class="page five hide" data-page="five">
+                              <p class="text">Готово?</p>
+                              <p class="text change-text">Як ви підписані у мережі?</p>
+                              <div class="control">
+                                  <input class="input is-hovered" type="text" placeholder="Лінк на фейсбук">
+                              </div>
+                              <button class="button is-success" style="">Отримати бонус</button>
+                          </div>
+                          <div class="page six hide" data-page="six">
+                              <p class="made">Підтверджено</p>
+                          </div>
                       </div>
                   </div>
               </article>
