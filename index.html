@@ -12,66 +12,78 @@
   </head>
   <body>
     <section class="section">
-      <div class="container columns is-mobile">
-          <div class="box column is-offset-5 is-4">
+      <div class="container columns">
+          <div class="box column is-offset-5 is-two-thirds-mobile is-one-third-desktop">
               <article class="media">
                   <div class="media-content">
                       <div class="content" style="overflow:hidden">
-                          <p class="support ">CАПОРТ</p>
-                          <p class="service">СЕРВІС МАЙБУТНЬОГО</p>
+                          <p class="name-of-company">Сантехніки</p>
+                          <p class="want-to-add">Києва</p>
                           <p class="text">Ваш електронний чек на надані послуги</p>
-                          <div class="inform">
-                          <div class="left-col">
+                          <div class="wrapper">
+                          <div class="inform columns is-mobile">
+                          <div class="left-col column is-half">
                           <div class="work">Сантехнічні роботи </div>
                           <div class="master">Майстер </div>
                           </div>
-                          <div class="right-col">
+                          <div class="right-col column is-half">
                               <div class="money">1000 грн</div>
                               <div class="name">Олександр Петров</div>
+                          </div>
                           </div>
                           </div>
                       </div>
                       <div class="change" style="overflow:hidden">
                           <div class="page first-page" data-page="first-page">
                           <p class="text change-text">Оберіть своє враження про майстра:</p>
-                          <div class="smiles">
-                          <div class="smile-happy smile" data-page="feedback"><img src="images/happy.png"/></div>
-                          <div class="smile-surprised smile" data-page="confirm"><img src="images/surprised.png"/></div>
-                          <div class="smile-sad smile" data-page="wait-for-call"><img src="images/sad.png"/></div>
+                          <div class="smiles columns is-mobile">
+                              <div class="smile-happy smile column is-one-third" data-page="feedback"><img src="images/happy.png"/></div>
+                          <div class="smile-surprised smile column is-one-third" data-page="confirm"><img src="images/surprised.png"/></div>
+                          <div class="smile-sad smile column is-one-third" data-page="wait-for-call"><img src="images/sad.png"/></div>
                           </div>
+                              <div class="column is-half is-offset-one-quarter">
                           <button class="button is-success ok" style="" >Підтвердити</button>
                           <button class="button is-text not-match" style="" data-page="price-not-match">Ціна не співпадає?</button>
+                              </div>
+                              <a class="service">podeal.co</a>
                           </div>
                           <div class="page price-not-match hide" data-page="price-not-match">
                               <p class="text change-text">Ціна не співпадає?</p>
                               <p class="some-text">Цей чек стосується лише виконаних робіт, вартість матеріалів не включено.
                               Ви впевнені, що вартість робіт не співпадає?</p>
-                              <button class="button is-success mistake" style="" data-page="first-page">А, все добре!</button>
-                              <button class="button is-danger not-match-truth" style="" data-page="wait-for-call">Не співпадає</button>
+                              <div class="columns is-mobile">
+                              <button class="button is-success mistake column is-one-third is-offset-1" style="" data-page="first-page">А, все добре!</button>
+                              <button class="button is-danger not-match-truth column is-one-third is-offset-1" style="" data-page="wait-for-call">Не співпадає</button>
+                              </div>
+                              <a class="service">podeal.co</a>
                           </div>
                           <div class="page wait-for-call hide" data-page="wait-for-call">
                               <p class="text change-text wait">Очікуйте на дзвінок <br>менеджера!</p>
+                              <a class="service">podeal.co</a>
                           </div>
                           <div class="page feedback hide" data-page="feedback">
                               <p class="made">Підтверджено</p>
                               <p class="text change-text report">Залишіть відгук про нас та отримайте<br> 100 грн
                                   на послугу для свого друга</p>
-                              <div class="links">
-                                  <div class="facebook"><img src="images/facebook.png"/></div>
-                                  <div class="google"><img src="images/google.png"/></div>
+                              <div class="links columns is-mobile is-variable is-2">
+                                  <div class="facebook column is-one-fifth "><img src="images/facebook.png"/></div>
+                                  <div class="google column is-one-fifth"><img src="images/google.png"/></div>
                               </div>
-                              <button class="button is-text bonus" style="" data-page="link-bonus">Отримати бонус</button>
+                              <button class="button is-text bonus column is-half is-offset-one-quarter" style="" data-page="link-bonus">Отримати бонус</button>
+                              <a class="service">podeal.co</a>
                           </div>
                           <div class="page link-bonus hide" data-page="link-bonus">
                               <p class="ready support">Готово?</p>
                               <p class="text change-text how">Як ви підписані у мережі?</p>
                               <div class="control">
-                                  <input class="input" type="text" placeholder="Лінк на фейсбук">
+                                  <input class="input column is-half is-offset-one-quarter" type="text" placeholder="Лінк на фейсбук">
                               </div>
-                              <button class="button is-success getBonus" style="">Отримати бонус</button>
+                              <button class="button is-success getBonus column is-half is-offset-one-quarter " style="">Отримати бонус</button>
+                              <a class="service">podeal.co</a>
                           </div>
                           <div class="page confirm hide" data-page="confirm">
                               <p class="made">Підтверджено</p>
+                              <a class="service">podeal.co</a>
                           </div>
                       </div>
                   </div>

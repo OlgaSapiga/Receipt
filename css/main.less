@@ -1,18 +1,23 @@
 .box{
-    width:320px!important;
-    height:350px!important;
+  margin:auto;
+  padding:auto;
+    //width:320px!important;
+    //height:350px!important;
 }
-.support{
+.name-of-company{
+    text-transform: uppercase;
     text-align:center;
     margin-top:-10px;
     font-weight: 900;
-    font-size:35px;
+    font-size:30px;
     color:rgb(31,182,14);
     letter-spacing:2px;
 }
-.service{
+.want-to-add{
+  font-size:20px;
+  text-transform: uppercase;
     text-align:center;
-    margin-top:-50px;
+    margin-top:-40px;
     font-weight:600;
 }
 .text{
@@ -25,62 +30,61 @@
     border-bottom: 1px solid #ddd;
 }
 .inform{
-position:relative;
+  align-content:center;
+    position:relative;
     margin-top:-10px;
     font-size:14px;
     font-weight:600;
     padding-bottom:5px;
-    border-bottom: 1px solid #ddd;
+}
+.wrapper{
+  margin-top:-20px;
+  border-bottom:1px solid #ddd;
 }
 .left-col {
-    display: inline-block;
-    margin-right:40px;
+    display: block;
 }
 .right-col{
-    display:inline-block;
-    text-align: end;
+    display:block;
+    text-align:right;
+  align-content:center;
 }
 .change .text{
     border-bottom:none;
     margin-top:-5px;
 }
-.smiles{
-  margin-top:5px;
-    position:relative;
+div.smiles.columns.is-mobile{
+  margin:-5px auto auto 15px;
 }
-.smile-happy, .smile-surprised, .smile-sad{
-    width:65px;
-    height:65px;
-    display:inline-block;
-}
-.smile-happy{
-    margin-left:20px;
-}
-.smile-happy, .smile-surprised{
-    margin-right:25px;
+
+.smile-happy > img, .smile-surprised > img, .smile-sad > img{
+    width:65px!important;
+    height:65px!important;
 }
 button.button.is-success{
     background-color: rgb(31, 182, 14);
 }
-.ok {
+button.button.is-success.ok {
     width:120px;
-    margin-left:85px;
-    margin-top:5px;
+    display:block;
+  line-height:2px;
+    margin:-15px auto auto auto;
 }
 
 button.button.is-success:hover{
   background-color: rgba(31,182,14,0.8);
 }
-.thisSmile{
-    outline: 3px solid red;
-    -moz-outline-radius: 100%;
+.thisSmile > img{
+  clip-path: circle(38px at center);
+  filter: drop-shadow(2px 2px 5px red);
 }
 button.button.is-text{
+   line-height:2px;
+  display:block;
+  margin:5px auto -10px auto;
     text-align:center;
-    margin-top:5px;
     height:20px;
     font-size:13px;
-    margin-left:77px;
 }
 .some-text{
     font-size:14px;
@@ -97,7 +101,6 @@ button.button.is-danger{
 }
 .wait{
     font-size:20px;
-    padding-top:40px;
 }
 .made{
     margin-top:-5px;
@@ -112,24 +115,25 @@ button.button.is-danger{
     font-size:15px;
 }
 .facebook, .google{
-    width:55px;
+    width:80px!important;
+    margin:auto;
 }
 .facebook{
-    margin-left:80px;
+  margin-left:80px!important;
 }
 .google{
-    margin-top:-60px;
-    margin-left:160px;
+  margin-right:80px!important;
 }
 .bonus{
-  margin-left:85px!important;
+  margin:-15px auto auto auto!important;
 }
-.mistake{
-  margin-left:15px;
-  margin-right:-15px;
+button.not-match-truth, button.mistake{
+  margin:5px auto 15px auto;
+  text-align:center;
+  line-height: 60%;
 }
 .ready{
-  margin-top:70px;
+  margin-top:40px;
   margin-left:10px;
 }
 .how{
@@ -137,16 +141,19 @@ button.button.is-danger{
 }
 input.input{
   text-align:center;
-  margin-top:20px;
+  margin:auto;
   width:210px;
- margin-left:45px;
   border-right:none;
   border-left:none;
   border-top:none;
   border-radius: 0;
   box-shadow:none;
 }
-.getBonus{
-  margin-left:75px;
-  margin-top:20px;
+button.getBonus{
+  margin:15px auto 40px auto;
+  line-height:60%;
 }
+a.service{
+  font-size:13px;
+}
+
