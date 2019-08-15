@@ -4,16 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Receipt</title>
-    <link rel="stylesheet" href="css/main.less">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-      <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
-    <section class="section">
-      <div class="container columns">
-          <div class="box column is-offset-5 is-two-thirds-mobile is-one-third-desktop">
+      <div class="container box">
               <article class="media">
                   <div class="media-content">
                       <div class="content" style="overflow:hidden">
@@ -36,7 +33,7 @@
                       <div class="change" style="overflow:hidden">
                           <div class="page first-page" data-page="first-page">
                           <p class="text change-text">Оберіть своє враження про майстра:</p>
-                          <div class="smiles columns is-mobile">
+                          <div class="smiles columns is-mobile has-text-centered">
                               <div class="smile-happy smile column is-one-third" data-page="feedback"><img src="images/happy.png"/></div>
                           <div class="smile-surprised smile column is-one-third" data-page="confirm"><img src="images/surprised.png"/></div>
                           <div class="smile-sad smile column is-one-third" data-page="wait-for-call"><img src="images/sad.png"/></div>
@@ -45,7 +42,6 @@
                           <button class="button is-success ok" style="" >Підтвердити</button>
                           <button class="button is-text not-match" style="" data-page="price-not-match">Ціна не співпадає?</button>
                               </div>
-                              <a class="service">podeal.co</a>
                           </div>
                           <div class="page price-not-match hide" data-page="price-not-match">
                               <p class="text change-text">Ціна не співпадає?</p>
@@ -55,42 +51,35 @@
                               <button class="button is-success mistake column is-one-third is-offset-1" style="" data-page="first-page">А, все добре!</button>
                               <button class="button is-danger not-match-truth column is-one-third is-offset-1" style="" data-page="wait-for-call">Не співпадає</button>
                               </div>
-                              <a class="service">podeal.co</a>
                           </div>
                           <div class="page wait-for-call hide" data-page="wait-for-call">
                               <p class="text change-text wait">Очікуйте на дзвінок <br>менеджера!</p>
-                              <a class="service">podeal.co</a>
-                          </div>
+                              </div>
                           <div class="page feedback hide" data-page="feedback">
                               <p class="made">Підтверджено</p>
                               <p class="text change-text report">Залишіть відгук про нас та отримайте<br> 100 грн
                                   на послугу для свого друга</p>
                               <div class="links columns is-mobile is-variable is-2">
-                                  <div class="facebook column is-one-fifth "><img src="images/facebook.png"/></div>
-                                  <div class="google column is-one-fifth"><img src="images/google.png"/></div>
+                                  <div class="facebook column is-one-fifth "><a><img src="images/facebook.png"/></a></div>
+                                  <div class="google column is-one-fifth"><a><img src="images/google.png"/></a></div></div>
                               </div>
                               <button class="button is-text bonus column is-half is-offset-one-quarter" style="" data-page="link-bonus">Отримати бонус</button>
-                              <a class="service">podeal.co</a>
                           </div>
-                          <div class="page link-bonus hide" data-page="link-bonus">
+                          <div class="page link-bonus hide has-text-centered" data-page="link-bonus">
                               <p class="ready support">Готово?</p>
                               <p class="text change-text how">Як ви підписані у мережі?</p>
                               <div class="control">
                                   <input class="input column is-half is-offset-one-quarter" type="text" placeholder="Лінк на фейсбук">
                               </div>
                               <button class="button is-success getBonus column is-half is-offset-one-quarter " style="">Отримати бонус</button>
-                              <a class="service">podeal.co</a>
                           </div>
                           <div class="page confirm hide" data-page="confirm">
                               <p class="made">Підтверджено</p>
-                              <a class="service">podeal.co</a>
                           </div>
                       </div>
                   </div>
               </article>
-          </div>
-      </div>
-    </section>
+
     <script type="text/javascript" src="lib/main.js"></script>
   </body>
 </html>

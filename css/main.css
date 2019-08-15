@@ -1,9 +1,9 @@
-.box{
-  margin:auto;
-  padding:auto;
-    //width:320px!important;
-    //height:350px!important;
+.container{
+  margin: auto;
+  margin-top: 30px!important;
+  max-width: 500px!important;
 }
+
 .name-of-company{
     text-transform: uppercase;
     text-align:center;
@@ -22,8 +22,6 @@
 }
 .text{
     padding-bottom:5px;
-    margin-left:-10px;
-    margin-right:-10px;
     font-weight:600;
     font-size:14px;
     text-align:center;
@@ -41,6 +39,8 @@
   margin-top:-20px;
   border-bottom:1px solid #ddd;
 }
+
+//"https://bulma.io/documentation/modifiers/helpers/""
 .left-col {
     display: block;
 }
@@ -54,7 +54,7 @@
     margin-top:-5px;
 }
 div.smiles.columns.is-mobile{
-  margin:-5px auto auto 15px;
+  margin-top: 5px;
 }
 
 .smile-happy > img, .smile-surprised > img, .smile-sad > img{
@@ -125,7 +125,7 @@ button.button.is-danger{
   margin-right:80px!important;
 }
 .bonus{
-  margin:-15px auto auto auto!important;
+  margin: auto!important;
 }
 button.not-match-truth, button.mistake{
   margin:5px auto 15px auto;
